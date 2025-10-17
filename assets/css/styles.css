@@ -7,6 +7,7 @@
   --text-color-hover: hsl(117, 100%, 92%);
   --bg-color: hsla(125, 26%, 91%, 0.789);
   --button-color-hover: hsl(219, 58%, 25%);
+  --featured-bg-color: hsl(111, 27%, 90%);
 }
 
 body {
@@ -25,6 +26,7 @@ header {
   position: sticky;
   top: 0;
   box-shadow: 0 0 5px gray;
+  z-index: 9999;
 }
 
 footer {
@@ -153,7 +155,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-    border: 4px solid var(--text-color-h1);
+  border: 4px solid var(--text-color-h1);
   box-shadow: 0 0 5px gray;
 }
 
@@ -178,9 +180,36 @@ figcaption {
   text-align: right;
   font-style: italic;
   margin-top: 2px;
+  font-size: 15px;
 }
 
 li {
     margin-bottom: 20px;
     font-size: 20px;
+}
+
+.featured {
+    background-color: var(--featured-bg-color);
+    padding: 20px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 20px;
+    margin: auto;
+    width: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+.featured:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px gray;
+    cursor: pointer;
+}
+
+.featured p {
+  text-align: center;
+}
+
+.featured-txt {
+    font-size: 20px;
+    opacity: 0.65;
+    margin-right: 15px;
 }
