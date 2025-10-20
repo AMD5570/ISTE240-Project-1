@@ -340,6 +340,10 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.featured figcaption {
+  color: black;
+}
+
 
 /* media queries for smaller screens */
 @media screen and (max-width: 1200px) {
