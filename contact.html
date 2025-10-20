@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greene, NY - Contact</title>
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+        <header>
+            <p>
+                <a href="index.html">Home</a> &nbsp; 
+                | &nbsp; <a href="activities.html">Activities</a> &nbsp; 
+                | &nbsp; <a href="food.html">Restaurants & Food</a> &nbsp; 
+                | &nbsp; <a href="history.html">History & Facts</a> &nbsp; 
+                | &nbsp; <a href="location.html">Location</a> &nbsp;
+                | &nbsp; <a href="contact.html">Contact</a> &nbsp;  
+                <span class="grading"><a href="grading.html">Grading & References</a></span>  
+            </p>
+        </header>
+
+        <main>
+            <h1>Greene, NY <span class="pageTitle">Contact</span></h1>
+            <h2>Please tell us about your visit! :</h2>
+
+            <hr>
+            <!-- the feedback form -->
+            <form method="GET" action="#" name="feedbackForm">
+
+                <label for="people">How many people did you travel with? :</label>
+                <input type="number" step="1" id="people" name="people" min="0">
+
+                <label for="dateVisited">When did you visit? :</label>
+                <input type="date" id="dateVisited" name="dateVisited">
+
+                <!-- fieldset for radio buttons -->
+                <fieldset>
+                    <legend>Favorite Place</legend>
+
+                    <div>
+                        <input type="radio" id="parks" name="favoritePlace" value="parks" checked>
+                        <label for="parks">One of the Parks</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="town" name="favoritePlace" value="townSquare">
+                        <label for="town">Town Square</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="restaurants" name="favoritePlace" value="restaurants">
+                        <label for="restaurants">Restaurants</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="museum" name="favoritePlace" value="museum">
+                        <label for="museum">Museums</label>
+                    </div>
+                </fieldset>
+
+                <!-- thoughts -->
+                <label for="thoughts">Any other thoughts? :</label>
+                <input type="text" id="thoughts" name="thoughts">
+
+                <!-- draggable range input, 0 - 10 -->
+                <label for="rating">What's your <i>overall</i> rating of this town? :</label>
+                <div class="rangeContainer">
+                    <p>0</p><input type="range" id="rating" name="rating" min="0" max="10">
+                    <p>10</p>
+                </div>
+
+                <!--  submit the info -->
+                <input type="submit" value="Submit Feedback" id="submitButton">
+
+            </form>
+
+            <footer>
+                <div class="col-1">
+                    <h5>Helpful Links</h5>
+                    <hr>
+                    <a href="index.html">Home</a>
+                    <a href="activities.html">Activities</a>
+                    <a href="food.html">Restaurants & Food</a>
+                    <a href="history.html">History & Facts</a>
+                    <a href="location.html">Location</a>
+                </div>
+                <div class="col-2">
+                    <h5>Contact</h5>
+                    <hr>
+                    <p>Reach us at:</p>
+                    <p>(123) 456-7890</p>
+                    <p><a href="mailto:greeneny@gmail.com">greeneny@gmail.com</a></p>
+                </div>
+                <div class="col-3">
+                    <h5>Other</h5>
+                    <hr>
+                    <p>&copy; Austin deHaan, 2025</p>
+                </div>
+            </footer>
+        </main>
+    
+</body>
+</html>
