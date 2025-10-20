@@ -342,7 +342,7 @@ input[type="text"] {
 
 
 /* media queries for smaller screens */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main {
     width: 95%;
     padding: 20px;
@@ -428,7 +428,8 @@ input[type="text"] {
   }
 }
 
-@media (max-width: 480px) {
+/* phone view */
+@media screen and (max-width: 480px) {
   body {
     font-size: 16px;
     margin: 0;
