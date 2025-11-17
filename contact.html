@@ -1,3 +1,7 @@
+<!-- 
+Author: Austin deHaan
+The contact page for the Greene, NY website.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,20 +15,30 @@
 
 <body>
 
+    <!-- the page header -->
     <header>
         <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="Greene, NY Logo"></a>
-        <p>
-            <a href="index.html">Home</a> &nbsp;
-            | &nbsp; <a href="activities.html">Activities</a> &nbsp;
-            | &nbsp; <a href="food.html">Restaurants & Food</a> &nbsp;
-            | &nbsp; <a href="history.html">History & Facts</a> &nbsp;
-            | &nbsp; <a href="location.html">Location</a> &nbsp;
-            | &nbsp; <a href="contact.html">Contact</a> &nbsp;
-            | &nbsp; <a href="grading.html">Grading</a> &nbsp;
-            | &nbsp; <a href="references.html">References</a>
-        </p>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+        <label for="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+        </label>
+
+        <nav id="primary-navigation" class="main-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="food.html">Restaurants &amp; Food</a></li>
+                <li><a href="history.html">History &amp; Facts</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="grading.html">Grading</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- main content -->
     <main>
         <h1>Greene, NY <span class="pageTitle">Contact</span></h1>
         <h2>Please tell us about your visit! :</h2>
@@ -80,6 +94,7 @@
 
         </form>
 
+        <!-- footer with helpful links and other info -->
         <footer>
             <div class="col-1">
                 <h5>Helpful Links</h5>
