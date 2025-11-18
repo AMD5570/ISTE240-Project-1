@@ -1,0 +1,83 @@
+<!-- 
+Author: Austin deHaan
+The history page for the Greene, NY website.
+-->
+
+<?php
+
+$pageTitle = '- History';
+
+include_once("assets/inc/header.inc.php");
+
+?>
+
+<!-- main content -->
+<h1>History & Facts <span class="pageTitle">Greene, NY</span></h1>
+<hr>
+
+<section class="introduction">
+    <div class="container">
+        <div class="text-div">
+            <p>Just like all towns across the globe, Greene has a rich and important history. Every place you
+                look, whether it be in the middle of the
+                village or out in the country, there is history in just about every place.
+            </p>
+        </div>
+    </div>
+</section>
+
+<a href="raymonds.php">
+    <section class="featured">
+        <h2><span class="featured-txt">Featured:</span> The Raymond Corporation</h2>
+        <div class="container">
+            <div class="text-div">
+                <p>The Raymond Corporation is a large manufacturer of material handling equipment, including
+                    forklifts and pallet jacks.
+                    Founded in 1922, the company has a long history of innovation.</p>
+            </div>
+            <figure class="image-div">
+                <img src="assets/images/raymond-corp.jpg" alt="The Raymond Corporation">
+                <figcaption>Outside of The Raymond Corporation (Central NY Business Journal)</figcaption>
+            </figure>
+        </div>
+    </section>
+</a>
+
+<section class="geography">
+    <h2>Early History</h2>
+    <div class="container">
+        <div class="text-div">
+            <p>Greene was first settled in the late 1700s and was established as a town early into the 1800s.
+            </p>
+            <p>The town was named after Nathanael Greene, a hero of the American Revolutionary War.</p>
+        </div>
+        <figure class="image-div">
+            <img src="assets/images/historic-greene.jpg" alt="Historical Greene, NY.">
+            <figcaption>1800s Greene, NY (World Maps Online)</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="geography">
+    <h2>Chenango Canal</h2>
+    <div class="container">
+        <div class="text-div">
+            <p>Similarly to the Erie Canal, the Chenango Canal played a vital role in transporting materials and
+                goods throughout the region.</p>
+            <p>The canal flowed through the center of Greene and connected to other towns, eventually flowing
+                into the Susquehanna River,
+                where goods could be shipped further south toward the Chesapeake Bay.
+            </p>
+        </div>
+        <figure class="image-div">
+            <img src="assets/images/chenango-canal.webp" alt="The once used Chenango Canal">
+            <figcaption>The once used Chenango Canal (NRT Application)</figcaption>
+        </figure>
+    </div>
+</section>
+
+<?php
+
+include_once("assets/inc/footer.inc.php");
+
+?>
